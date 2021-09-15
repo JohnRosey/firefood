@@ -1,14 +1,21 @@
+/* eslint-disable linebreak-style */
 module.exports = {
-  root: true,
-  env: {
+  "root": true,
+  "env": {
     es6: true,
     node: true,
   },
-  extends: [
+  "extends": [
     "eslint:recommended",
-    "google",
-  ],
-  rules: {
+    "google"],
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "ecmaVersion": 9,
+    "ecmaFeatures": {
+      "jsx": true,
+    }},
+
+  "rules": {
     quotes: ["error", "double"],
   },
 };
